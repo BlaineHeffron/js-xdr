@@ -154,7 +154,7 @@ export class XdrReader {
   ensureInputConsumed() {
     if (this._index !== this._length)
       throw new XdrReaderError(
-        `invalid XDR contract typecast - source buffer not entirely consumed`
+        `invalid XDR contract typecast - source buffer not entirely consumed - index is  ${this._index} length is ${this._length}`
       );
   }
 }
